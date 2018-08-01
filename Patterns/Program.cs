@@ -1,5 +1,6 @@
 using Patterns.Creational.AbstractFactory;
 using Patterns.Creational.Builder;
+using Patterns.Creational.FactoryMethod;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,8 @@ namespace Patterns
         {
             App app;
             //app = new AbstractFactoryApp();
-            app = new BuilderApp();
-
+            //app = new BuilderApp();
+            app = new FactoryMethodApp();
             app.Run();
         }
     }

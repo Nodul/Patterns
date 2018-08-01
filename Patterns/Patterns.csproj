@@ -54,7 +54,7 @@
     <Compile Include="Creational\AbstractFactory\WordDocument.cs" />
     <Compile Include="Creational\Builder\Barrel.cs" />
     <Compile Include="Creational\Builder\BuilderApp.cs" />
-    <Compile Include="Creational\Builder\Director.cs" />
+    <Compile Include="Creational\Builder\RifleForeman.cs" />
     <Compile Include="Creational\Builder\HuntingRifleBuilder.cs" />
     <Compile Include="Creational\Builder\RifleBuilder.cs" />
     <Compile Include="Creational\Builder\LaserRifleBuilder.cs" />
@@ -62,6 +62,14 @@
     <Compile Include="Creational\Builder\RifleAction.cs" />
     <Compile Include="Creational\Builder\Stock.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="Creational\FactoryMethod\BologneseSpaghetti.cs" />
+    <Compile Include="Creational\FactoryMethod\BologneseSpaghettiFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\FactoryMethodApp.cs" />
+    <Compile Include="Creational\FactoryMethod\NapoliSpaghetti.cs" />
+    <Compile Include="Creational\FactoryMethod\NapoliSpaghettiFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\Spaghetti.cs" />
+    <Compile Include="Creational\FactoryMethod\SpaghettiFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\StaticSpaghettiFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
