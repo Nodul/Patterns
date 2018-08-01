@@ -52,7 +52,16 @@
     <Compile Include="Creational\AbstractFactory\Spreadsheet.cs" />
     <Compile Include="Creational\AbstractFactory\WinFactory.cs" />
     <Compile Include="Creational\AbstractFactory\WordDocument.cs" />
-    <Compile Include="IRun.cs" />
+    <Compile Include="Creational\Builder\Barrel.cs" />
+    <Compile Include="Creational\Builder\BuilderApp.cs" />
+    <Compile Include="Creational\Builder\Director.cs" />
+    <Compile Include="Creational\Builder\HuntingRifleBuilder.cs" />
+    <Compile Include="Creational\Builder\RifleBuilder.cs" />
+    <Compile Include="Creational\Builder\LaserRifleBuilder.cs" />
+    <Compile Include="Creational\Builder\Rifle.cs" />
+    <Compile Include="Creational\Builder\RifleAction.cs" />
+    <Compile Include="Creational\Builder\Stock.cs" />
+    <Compile Include="App.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

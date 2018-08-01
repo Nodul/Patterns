@@ -5,36 +5,41 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Patterns.Creational.AbstractFactory
+namespace Patterns.Creational.Builder
 {
-    class AbstractFactoryApp : App
+    class BuilderApp : App
     {
-        
-        private AbstractFactory factory;
         internal override void Run()
         {
-            AppName = "Automated Document Factory";
+            AppName = "Rifle Builder App";
+            RifleBuilder builder = null;
+            RifleForeman director; 
+
             Console.WriteLine($"Welcome to our {AppName}.");
             Thread.Sleep(500);
-            Console.WriteLine("Please select your System:");
-            Console.WriteLine("\n1 - Windows \n\n2 - Mac \n\nAnything else - exit");
+            Console.WriteLine("Please select your Rifle type:");
+            Console.WriteLine("\n1 - Hunting \n\n2 - Laser \n\nAnything else - exit");
             string input = Console.ReadLine();
             if (Int32.TryParse(input, out int choice))
             {
                 switch (choice)
                 {
                     case 1:
-                        factory = new WinFactory();
+                        builder = new HuntingRifleBuilder();
                         break;
                     case 2:
-                        factory = new MacFactory();
+                        builder = new LaserRifleBuilder();
                         break;
+                    default:
+                        goto END;
                 }
-                Document doc = factory.CreateDocument();
-                Spreadsheet spr = factory.CreateSpreadsheet();
-                Console.WriteLine($"Here is your new Document: {doc}");
-                Console.WriteLine($"Here is your new Spreadsheet {spr}");
+                director = new RifleForeman(builder);
+                Rifle rifle = director.BuildRifle();
+
+                Console.WriteLine(rifle.ToString());
             }
+
+            END:
             Console.WriteLine($"Thank you for using our {AppName}. See you soon!");
         }
     }

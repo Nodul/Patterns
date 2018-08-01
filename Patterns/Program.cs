@@ -1,4 +1,5 @@
 using Patterns.Creational.AbstractFactory;
+using Patterns.Creational.Builder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,9 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
-            IRun app = new AbstractFactoryApp();
+            App app;
+            //app = new AbstractFactoryApp();
+            app = new BuilderApp();
 
             app.Run();
         }

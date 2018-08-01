@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Patterns
 {
-    interface IRun
+    abstract class App
     {
-        void Run();
+        protected string AppName;
+        internal abstract void Run();
     }
 }
