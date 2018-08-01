@@ -1,0 +1,1 @@
+﻿Here are my implementations of various GoF Design Patterns, as explained on https://sourcemaking.com/design_patterns
