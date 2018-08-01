@@ -70,14 +70,17 @@
     <Compile Include="Creational\FactoryMethod\Spaghetti.cs" />
     <Compile Include="Creational\FactoryMethod\SpaghettiFactory.cs" />
     <Compile Include="Creational\FactoryMethod\StaticSpaghettiFactory.cs" />
+    <Compile Include="Creational\ObjectPool\FurniturePool.cs" />
+    <Compile Include="Creational\ObjectPool\ObjectPoolApp.cs" />
+    <Compile Include="Creational\ObjectPool\Furniture.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Readme.txt" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
